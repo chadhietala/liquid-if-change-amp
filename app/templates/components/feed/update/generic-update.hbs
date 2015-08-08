@@ -1,0 +1,7 @@
+{{#liquid-if model.isHidden class="feed-update"}}
+  Hidden Update
+{{else}}
+  {{component
+    model.componentType
+    model=model}}
+{{/liquid-if}}

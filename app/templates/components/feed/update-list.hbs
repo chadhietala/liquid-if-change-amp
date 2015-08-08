@@ -1,0 +1,5 @@
+{{#each model as |page|}}
+  {{#each page.elements as |update|}}
+    {{feed/update/generic-update model=update}}
+  {{/each}}
+{{/each}}

@@ -1,0 +1,8 @@
+{{model.componentType}}
+
+{{feed/post-meta model=model}}
+{{#liquid-if model.hasComments}}
+  {{feed/comments/comments-list}}
+{{else}}
+  No comments
+{{/liquid-if}}
